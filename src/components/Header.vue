@@ -1,7 +1,7 @@
 <template>
   <header>
     <div class="my_header-container">
-      <LogoHeader />
+      <MyLogoHeader />
       <LinkHeader />
       <ContactHeader />
       <ButtonHeader />
@@ -10,7 +10,7 @@
 </template>
 
 <script>
-import LogoHeader from "./HeaderComponents/LogoHeader.vue"
+import MyLogoHeader from "./HeaderComponents/MyLogoHeader.vue"
 import LinkHeader from "./HeaderComponents/LinkHeader.vue"
 import ContactHeader from "./HeaderComponents/ContactHeader.vue"
 import ButtonHeader from "./HeaderComponents/ButtonHeader.vue"
@@ -18,7 +18,7 @@ import ButtonHeader from "./HeaderComponents/ButtonHeader.vue"
 export default {
     name: 'Header',
     components: {
-      LogoHeader,
+      MyLogoHeader,
       LinkHeader,
       ContactHeader,
       ButtonHeader
