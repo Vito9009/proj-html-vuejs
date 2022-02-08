@@ -29,6 +29,11 @@
             
             <span class="grey">By submit my data I agree to be contacted</span>
         </div>
+
+        <div class="test">
+            <div class="box-1"></div>
+            <div class="box-2"></div>
+        </div>
     </div>
   </div>
 </template>
@@ -51,6 +56,19 @@ export default {
     color: $whiteColor;
     display: flex;
     align-items: center;
+
+    .test{
+        position: absolute;
+        right: 10px;
+        top: 100px;
+        .box-1, .box-2{
+            height: 40px;
+            width: 40px;
+            background-color: $whiteColor;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+    }
 
     .my_text-jumbo{
         width: 500px;
