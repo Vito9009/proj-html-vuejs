@@ -65,7 +65,7 @@ export default {
             height: 40px;
             width: 40px;
             background-color: $whiteColor;
-            margin-bottom: 10px;
+            margin-bottom: 4px;
             border-radius: 5px;
         }
     }
