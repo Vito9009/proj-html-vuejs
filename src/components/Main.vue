@@ -2,7 +2,8 @@
   <div>
     <Jumbo />
     <TopInfoMain />
-    <BrandsPartner/>
+    <BrandsPartner />
+    <CaseStudiesSectionMain />
   </div>
 </template>
 
@@ -10,6 +11,8 @@
 import Jumbo from "./MainComponents/Jumbo.vue"
 import TopInfoMain from "./MainComponents/TopInfoMain.vue"
 import BrandsPartner from "./MainComponents/BrandsPartner.vue"
+import CaseStudiesSectionMain from "./MainComponents/CaseStudiesSectionMain.vue"
+
 
 export default {
     name: 'Main',
@@ -17,7 +20,8 @@ export default {
     components: {
       Jumbo,
       TopInfoMain,
-      BrandsPartner
+      BrandsPartner,
+      CaseStudiesSectionMain
     }
 }
 </script>
