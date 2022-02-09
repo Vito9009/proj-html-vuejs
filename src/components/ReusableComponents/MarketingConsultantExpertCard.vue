@@ -42,7 +42,7 @@ export default {
     align-items: center;
     flex-direction: column;
     color: $blackColor;
-    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.6);
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.4);
 
 
     .consultant-expert-info{
