@@ -42,3 +42,17 @@ $starshipColor: #ece046;
 .grey{
     color: #858786;
 }
+
+// Filter
+
+.hue-rotate-icon-1{
+    filter: hue-rotate(160deg);
+}
+
+.hue-rotate-icon-3{
+    filter: hue-rotate(330deg);
+}
+
+.hue-rotate-icon-4{
+    filter: hue-rotate(210deg);
+}
