@@ -31,8 +31,14 @@ export default {
 
 header{
   height: 80px;
+  background-color: $whiteColor;
   display: flex;
   align-items: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
   
   .my_header-container{
     width: 75%;

@@ -44,6 +44,7 @@ export default {
     color: $whiteColor;
     display: flex;
     align-items: center;
+    margin-top: 80px;
 
     .test{
         position: absolute;
