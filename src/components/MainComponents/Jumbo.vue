@@ -9,25 +9,8 @@
             <p>Online marketing to secure customer retention, leads, and sales. We focus on the bigger picture</p>
         </div>
 
-        <div class="my_form-jumbo">
-            <div class="consultant-expert-info">
-                <img src="../../assets/img/marketing-consultant-expert.jpg" alt="">
-                <h4>Richard Madsen</h4>
-                <p class="grey">Marketing Consultant Expert</p>
-                <span class="orange"><i class="fa-solid fa-phone"></i> (555) 802-1234</span>
-            </div>
-
-            <form action="">
-                <input type="text" placeholder="Your Name*">
-                <input type="text" placeholder="Your Email*">
-                <input type="text" placeholder="Your Phone Number*">
-
-                <div class="my_btn-container">
-                    <a href="#" class="my_form-btn">Get a Callback</a>
-                </div>
-            </form>   
-            
-            <span class="grey">By submit my data I agree to be contacted</span>
+        <div class="marketing-consultant-card">
+            <MarketingConsultantExpertCard />
         </div>
 
         <div class="test">
@@ -39,8 +22,13 @@
 </template>
 
 <script>
+import MarketingConsultantExpertCard from '../ReusableComponents/MarketingConsultantExpertCard.vue'
+
 export default {
-    name: 'Jumbo'
+    name: 'Jumbo',
+    components: {
+        MarketingConsultantExpertCard
+    }
 }
 </script>
 
@@ -85,65 +73,11 @@ export default {
         }
     }
 
-    .my_form-jumbo{
-        width: 21%;
-        height: 65%;
-        background-color: $whiteColor;
-        border-radius: 20px;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        flex-direction: column;
-        color: $blackColor;
+    .marketing-consultant-card{
+        width: 300px;
         position: absolute;
         top: 30%;
         right: 21%;
-
-        .consultant-expert-info{
-            width: 100%;
-            height: 120px;
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            flex-direction: column;
-            
-            img{
-                height: 60px;
-                border-radius: 50%;
-            }
-        }
-
-        form{
-            width: 90%;
-            display: flex;
-            flex-direction: column;
-
-            input{
-                margin-bottom: 10px;
-                padding: 15px 5px;
-                border-radius: 5px;
-                border: 1px solid rgba(66, 66, 66, 0.3);
-                outline: none;
-            }
-
-            .my_btn-container{
-                    height: 100%;
-                    width: 100%;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-
-                .my_form-btn{
-                    width: 100%;
-                    padding: 10px 0;
-                    text-align: center;
-                    color: $whiteColor;
-                    background-color: $ecstasyColor;
-                    border-radius: 5px;
-                    text-decoration: none;
-                }
-            }
-        }
     }
 }
 
