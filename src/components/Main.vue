@@ -4,6 +4,10 @@
     <TopInfoMain />
     <BrandsPartner />
     <CaseStudiesSectionMain />
+
+    <div class="my_bg-grey">
+
+    </div>
   </div>
 </template>
 
@@ -29,4 +33,8 @@ export default {
 <style lang="scss" scoped>
 @import "../assets/global.scss";
 
+.my_bg-grey{
+  background-color: $graynurseColor;
+  margin-top: 50px;
+}
 </style>
