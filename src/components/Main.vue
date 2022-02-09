@@ -6,7 +6,7 @@
     <CaseStudiesSectionMain />
 
     <div class="my_bg-grey">
-
+      <MyWhyClient />
     </div>
   </div>
 </template>
@@ -16,6 +16,7 @@ import Jumbo from "./MainComponents/Jumbo.vue"
 import TopInfoMain from "./MainComponents/TopInfoMain.vue"
 import BrandsPartner from "./MainComponents/BrandsPartner.vue"
 import CaseStudiesSectionMain from "./MainComponents/CaseStudiesSectionMain.vue"
+import MyWhyClient from "./MainComponents/MyWhyClient.vue"
 
 
 export default {
@@ -25,7 +26,8 @@ export default {
       Jumbo,
       TopInfoMain,
       BrandsPartner,
-      CaseStudiesSectionMain
+      CaseStudiesSectionMain,
+      MyWhyClient
     }
 }
 </script>
