@@ -2,11 +2,11 @@
   <div>
       <div class="container-info-main">
           <div class="info-container">
-              <img src="../../assets/img/fss-demo-main-400x300.jpg" alt="">
+              <img class="img-draw" src="../../assets/img/awareness.png" alt="">
 
               <div class="text-info-main">
                   <div class="min-head-container">
-                      <img src="../../assets/img/award-d-200x191.png" alt="">
+                      <img src="../../assets/img/business-growth.png" alt="">
                       <h5>Business Growth</h5>
                     </div>
                   
@@ -23,7 +23,7 @@
           <div class="info-container">
               <div class="text-info-main">
                   <div class="min-head-container">
-                      <img src="../../assets/img/award-d-200x191.png" alt="">
+                      <img src="../../assets/img/investors-in-people.png" alt="">
                       <h5>Investors In People</h5>
                     </div>
                   
@@ -36,15 +36,15 @@
                 </div>
               </div>
 
-              <img src="../../assets/img/fss-demo-main-400x300.jpg" alt="">
+              <img class="img-draw" src="../../assets/img/training.png" alt="">
           </div>
 
           <div class="info-container">
-              <img src="../../assets/img/fss-demo-main-400x300.jpg" alt="">
+              <img class="img-draw" src="../../assets/img/social-proof.png" alt="">
 
               <div class="text-info-main">
                   <div class="min-head-container">
-                      <img src="../../assets/img/award-d-200x191.png" alt="">
+                      <img src="../../assets/img/social-media-analysis.png" alt="">
                       <h5>Social Media Analysis</h5>
                     </div>
                   
@@ -81,6 +81,10 @@ export default {
         justify-content: space-around;
         align-items: center;
         margin: 100px 0;
+
+        .img-draw{
+            width: 40%;
+        }
 
         .text-info-main{
             width: 40%;

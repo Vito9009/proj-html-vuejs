@@ -14,8 +14,8 @@
         </div>
 
         <div class="test">
-            <div class="box-1"></div>
-            <div class="box-2"></div>
+            <div class="box-1"><img src="../../assets/img/demos.png" alt=""></div>
+            <div class="box-2"><img src="../../assets/img/on-sale.png" alt=""></div>
         </div>
     </div>
   </div>
@@ -56,6 +56,12 @@ export default {
             background-color: $whiteColor;
             margin-bottom: 4px;
             border-radius: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img{
+                width: 80%;
+            }
         }
     }
 

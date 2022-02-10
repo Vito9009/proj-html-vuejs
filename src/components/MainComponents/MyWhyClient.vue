@@ -38,7 +38,9 @@
 
               <div class="why-icon-text-middle">
                   <div class="sub-icon-text-container">
-                      <img src="../../assets/img/photolight_thumbnail-400x300.jpg" alt="">
+                      <div class="box-icon">
+                          <img src="../../assets/img/accountability.png" alt="">
+                      </div>
 
                       <div>
                           <h6>Accountability</h6>
@@ -48,7 +50,9 @@
                   </div>
 
                   <div class="sub-icon-text-container">
-                      <img src="../../assets/img/photolight_thumbnail-400x300.jpg" alt="">
+                      <div class="box-icon">
+                          <img src="../../assets/img/transparency.png" alt="">
+                      </div>
 
                       <div>
                           <h6>Transparency</h6>
@@ -58,7 +62,9 @@
                   </div>
 
                   <div class="sub-icon-text-container">
-                      <img src="../../assets/img/photolight_thumbnail-400x300.jpg" alt="">
+                      <div class="box-icon">
+                          <img src="../../assets/img/investment.png" alt="">
+                      </div>
 
                       <div>
                           <h6>Investment</h6>
@@ -203,9 +209,19 @@ export default {
                 align-items: center;
                 margin-bottom: 30px;
 
-                img{
-                    height: 30px;
+                .box-icon{
+                    padding: 10px;
+                    background-color: $whiteColor;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
                     margin-right: 10px;
+                    border-radius: 10px;
+                    border: 1px solid $ecstasyColor;
+
+                    img{
+                        height: 15px;
+                    }
                 }
 
                 div{
