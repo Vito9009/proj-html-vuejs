@@ -7,13 +7,17 @@
             </h1>
 
             <p>Online marketing to secure customer retention, leads, and sales. We focus on the bigger picture</p>
+
+            <div class="my_btn-container">
+                <a href="#" class="my_jumbo-btn">Our Services <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
         </div>
 
         <div class="marketing-consultant-card">
             <MarketingConsultantExpertCard />
         </div>
 
-        <div class="test">
+        <div class="mini-box-container">
             <div class="box-1"><img src="../../assets/img/demos.png" alt=""></div>
             <div class="box-2"><img src="../../assets/img/on-sale.png" alt=""></div>
         </div>
@@ -46,10 +50,11 @@ export default {
     align-items: center;
     margin-top: 80px;
 
-    .test{
+    .mini-box-container{
         position: absolute;
         right: 10px;
         top: 100px;
+
         .box-1, .box-2{
             height: 40px;
             width: 40px;
@@ -59,6 +64,7 @@ export default {
             display: flex;
             justify-content: center;
             align-items: center;
+            
             img{
                 width: 80%;
             }
@@ -77,6 +83,22 @@ export default {
 
         p{
             font-size: 20px;
+            margin: 30px 0;
+        }
+    }
+
+    .my_btn-container{
+        height: 100%;
+        display: flex;
+        align-items: center;
+        
+        .my_jumbo-btn{
+            padding: 10px 30px;
+            color: $blackColor;
+            background-color: $whiteColor;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
         }
     }
 
