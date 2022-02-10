@@ -8,6 +8,12 @@
     <div class="my_bg-grey">
       <MyWhyClient />
     </div>
+
+    <StatementMarketingConsultant />
+
+    <div class="my_bg-grey">
+      <MarketingResources />
+    </div>
   </div>
 </template>
 
@@ -17,7 +23,8 @@ import TopInfoMain from "./MainComponents/TopInfoMain.vue"
 import BrandsPartner from "./MainComponents/BrandsPartner.vue"
 import CaseStudiesSectionMain from "./MainComponents/CaseStudiesSectionMain.vue"
 import MyWhyClient from "./MainComponents/MyWhyClient.vue"
-
+import StatementMarketingConsultant from "./MainComponents/StatementMarketingConsultant.vue"
+import MarketingResources from "./MainComponents/MarketingResources.vue"
 
 export default {
     name: 'Main',
@@ -27,7 +34,9 @@ export default {
       TopInfoMain,
       BrandsPartner,
       CaseStudiesSectionMain,
-      MyWhyClient
+      MyWhyClient,
+      StatementMarketingConsultant,
+      MarketingResources
     }
 }
 </script>

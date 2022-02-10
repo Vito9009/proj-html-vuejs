@@ -18,7 +18,6 @@
                 <div class="why-img">
                     <img src="../../assets/img/we-boost-our-clients-600x549.jpg" alt="">
                 </div>
-
           </div>
 
           <div class="why-middle-container">
@@ -253,20 +252,3 @@ export default {
     }
 }
 </style>
-
-
-.my_awards-container{
-    margin: 0 20px;
-
-    img{
-        width: 80px;
-    }
-
-    .text{
-        margin: 10px 0;
-        font-size: 11px;
-        font-weight: bold;
-        line-height: 1.8;
-        color: $tundoraColor;
-    }
-}

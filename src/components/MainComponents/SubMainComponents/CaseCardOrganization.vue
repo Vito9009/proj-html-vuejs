@@ -31,13 +31,17 @@ export default {
     }
 
     .main-text{
-        margin: 20px 0;
+        padding-top: 20px;
+        padding-bottom: 10px;
         font-size: 18px;
+        border-bottom: 1px dotted $gunsmokeColor;
+
     }
 
     h2{
         font-size: 30px;
         margin-bottom: 3px;
+        padding-top: 10px;
     }
 
     .sub-text{
