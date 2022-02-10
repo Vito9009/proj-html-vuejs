@@ -221,7 +221,6 @@ export default {
 
           h5{
             line-height: 2;
-            margin-left: 24px;
           }
 
           ul{
