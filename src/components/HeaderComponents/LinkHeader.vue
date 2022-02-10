@@ -3,7 +3,7 @@
       <div class="my_container">
         <div class="my_link-container" v-for="(element, index) in links"
         :key="index">
-            <a :href="element.href">{{element.text}}</a>
+            <a :href="element.href" :class="{'active': element.clicked}">{{element.text}} <i class="down" :class="element.down"></i></a>
         </div>
       </div>
   </div>
@@ -17,27 +17,35 @@ export default {
         links: [
           {
             text: "Home",
-            href: "#"
+            href: "#",
+            down: 'fa-solid fa-chevron-down',
+            clicked: true
           },
           {
             text: "Services",
-            href: "#"
+            href: "#",
+            down: 'fa-solid fa-chevron-down',
+            clicked: false
           },
           {
             text: "Why Us",
-            href: "#"
+            href: "#",
+            clicked: false
           },
           {
             text: "Case Studies",
-            href: "#"
+            href: "#",
+            clicked: false
           },
           {
             text: "About",
-            href: "#"
+            href: "#",
+            clicked: false
           },
           {
             text: "Blog",
-            href: "#"
+            href: "#",
+            clicked: false
           }
         ]
       }
@@ -56,15 +64,22 @@ export default {
     .my_link-container{
         padding: 0 15px;
         text-align: center;
+        position: relative;
+        display: inline-block;
 
         a{
             text-decoration: none;
             color: $blackColor;
             padding: 5px;
 
-            &:hover{
+            &.active, &:hover{
                 color: $ecstasyColor;
                 border-bottom: 2px solid $ecstasyColor;
+            }
+
+            i{
+              font-size: 9px;
+              margin-left: 3px;
             }
         }
     }
