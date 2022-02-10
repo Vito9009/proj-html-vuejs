@@ -2,10 +2,17 @@
   <div>
       <div class="my_container">
         <div class="my_link-container" v-for="(element, index) in links"
-        :key="index">
-            <a :href="element.href" :class="{'active': element.clicked}">{{element.text}} <i class="down" :class="element.down"></i></a>
+          :key="index">
+          <a :href="element.href" :class="{'active': element.clicked}">{{element.text}} <i class="down" :class="element.down"></i></a>
+            <div class="my_none-absolute" :class="element.class">
+            <ul>
+              <li v-for="(item, itemindex) in element.dropdownitem"
+                :key="itemindex">{{item}}</li>
+          </ul>
         </div>
+
       </div>
+    </div>
   </div>
 </template>
 
@@ -19,13 +26,24 @@ export default {
             text: "Home",
             href: "#",
             down: 'fa-solid fa-chevron-down',
-            clicked: true
+            clicked: true,
+            class: 'dropdown-content',
+            dropdownitem: [
+              'Test',
+              'Test',
+              'Test'
+            ]
           },
           {
             text: "Services",
             href: "#",
             down: 'fa-solid fa-chevron-down',
-            clicked: false
+            clicked: false,
+            class: 'dropdown-content',
+            dropdownitem: [
+              'Test',
+              'Test',
+              'Test'            ]
           },
           {
             text: "Why Us",
@@ -66,6 +84,37 @@ export default {
         text-align: center;
         position: relative;
         display: inline-block;
+
+        .my_none-absolute{
+          display: none;
+          position: absolute;
+        }
+
+        .dropdown-content {
+          display: none;
+          position: absolute;
+          background-color: $whiteColor;
+          width: 100px;
+          padding: 10px 0;
+          z-index: 1;
+
+          ul{
+            padding: 0;
+          }
+
+          li{
+            list-style: none;
+            cursor: pointer;
+
+            &:hover{
+              color: $ecstasyColor;
+            }
+          }
+        }
+
+          &:hover .dropdown-content {
+            display: block;
+          }
 
         a{
             text-decoration: none;
