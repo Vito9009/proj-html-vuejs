@@ -3,7 +3,7 @@
       <div class="card-organization-container">
           <h2>Trusted by Leading Organisations</h2>
 
-          <div class="card">
+          <div class="my_card">
             <CaseCardOrganization v-for="(info, index) in casestudiesinfo"
             :key="index"
             :img="info.img"
@@ -72,7 +72,7 @@ export default {
       margin: 60px 0;
     }
 
-    .card{
+    .my_card{
       display: flex;
       justify-content: center;
       align-items: center;

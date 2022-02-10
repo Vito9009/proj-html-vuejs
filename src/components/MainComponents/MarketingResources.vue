@@ -9,7 +9,7 @@
           </div>
         </div>
 
-          <div class="card">
+          <div class="my_card">
             <MarketingResourcesComponent v-for="(info, index) in marketinginfo"
             :key="index"
             :img="info.img"
@@ -87,7 +87,7 @@ export default {
       }
     }
 
-    .card{
+    .my_card{
       display: flex;
       justify-content: center;
       width: 21%;
