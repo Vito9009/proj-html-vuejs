@@ -26,6 +26,11 @@ export default {
         background-color: rgba(247, 98, 16, 0.2);
         border-radius: 5px;
         text-decoration: none;
+
+        &:hover{
+          color: $whiteColor;
+          background-color: $ecstasyColor;
+        }
     }
 }
 </style>

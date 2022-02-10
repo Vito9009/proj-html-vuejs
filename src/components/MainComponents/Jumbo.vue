@@ -99,6 +99,12 @@ export default {
             border-radius: 5px;
             text-decoration: none;
             font-weight: bold;
+
+            &:hover{
+            color: $whiteColor;
+            background-color: rgba(0, 0, 0, 0);
+            border: 1px solid $whiteColor;
+            }
         }
     }
 
